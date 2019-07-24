@@ -1,30 +1,34 @@
 #include <iostream>
+#include <cassert>
+#include <array>
 #include <string>
 #include <array>
 #include <vector>
-
+#include <unordered_map>
+#include "Sales_data.h"
+#include <vector>
+using std::cin;
 using std::cout;
 using std::endl;
 
-class test {
-private:
-	int i;
-public:
-	int get() {
-		return i;
-	}
-};
 
-void go(int num) {
-	cout << "go num" << endl;
+
+
+template <int N>
+constexpr int getsize(int (&a)[N]) {
+	return N;
 }
 
+void go(int) {
+	cout << "num" << endl;
+}
+void go(void*) {
+	cout << "*p" << endl;
+}
 
 int main(int argc, char** argv)
 {
-	int *p = NULL;
-	go(p);
+	go(NULL);
 	system("pause");
 	return 0;
 }
-int i = 1;

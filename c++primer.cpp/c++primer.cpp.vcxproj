@@ -20,6 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Sales_data.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0559A291-7113-4CB7-981E-24C6B9E7C63F}</ProjectGuid>
