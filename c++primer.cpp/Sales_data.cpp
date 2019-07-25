@@ -2,7 +2,8 @@
 #include <string>
 #include "Sales_data.h"
 
-// Sales_data's function
+
+
 double Sales_data::avg_price() const {
 	if (units_sold)
 		return revenue / units_sold;

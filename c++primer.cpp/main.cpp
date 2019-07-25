@@ -1,3 +1,4 @@
+#include <Bits.h>
 #include <iostream>
 #include <cassert>
 #include <array>
@@ -7,28 +8,19 @@
 #include <unordered_map>
 #include "Sales_data.h"
 #include <vector>
+#include "Screen.h"
+#include "WindowMgr.h"
 using std::cin;
 using std::cout;
 using std::endl;
 
 
-
-
-template <int N>
-constexpr int getsize(int (&a)[N]) {
-	return N;
-}
-
-void go(int) {
-	cout << "num" << endl;
-}
-void go(void*) {
-	cout << "*p" << endl;
-}
-
 int main(int argc, char** argv)
 {
-	go(NULL);
+	Screen s1(5, 3);
+	const Screen s2(3, 2);
+	s1.move(2, 1).set('&').display(cout);
+	s2.display(cout);
 	system("pause");
 	return 0;
 }
