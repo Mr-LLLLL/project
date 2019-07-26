@@ -8,10 +8,10 @@ friend std::istream &read(std::istream&, Sales_data&);
 public:
 	//construct function
 	Sales_data() : bookNo(), units_sold(0), revenue(0.0) {}
-	Sales_data(const std::string &s) : bookNo(s) {}
+	explicit Sales_data(const std::string &s) : bookNo(s) {}
 	Sales_data(const std::string &s, unsigned n, double p) :
 		bookNo(s), units_sold(n), revenue(p * n) {}
-	Sales_data(std::istream &);
+	explicit Sales_data(std::istream &);
 
 	// function
 	std::string isbn() const {

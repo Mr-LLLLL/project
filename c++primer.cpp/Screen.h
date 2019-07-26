@@ -5,9 +5,8 @@ class Screen {
 	friend class WindowMgr;
 public:
 	using pos = std::string::size_type;
-	Screen() : cursor(0), height(0), width(0), contents() {}
-	Screen(pos ht, pos wd, char c) : cursor(0), height(ht), width(wd), contents(ht * wd, c) {}
-	Screen(pos ht, pos wd) : cursor(0), height(ht), width(wd), contents(ht * wd, ' ') {}
+	Screen() : Screen(0, 0) {}
+	Screen(pos ht, pos wd, char c = ' ') : cursor(0), height(ht), width(wd), contents(ht * wd, c) {}
 	char get(pos ht, pos wd) const;
 	char get() const;
 	Screen &move(pos r, pos c);
