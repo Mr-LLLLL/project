@@ -15,22 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClInclude Include="Query.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TextQuery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Query.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="TextQuery.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="QueryResult.cpp">
+    <ClCompile Include="TextQuerymain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="TextQuery.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="QueryResult.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

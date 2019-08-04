@@ -1,4 +1,5 @@
 #include <iostream>
+#include <functional>
 #include <unordered_set>
 #include <set>
 #include <map>
@@ -24,42 +25,51 @@
 #include <forward_list>
 #include <memory>
 #include <exception>
+#include <new>
 using std::cin;
 using std::cout;
 using std::endl;
 
-struct test {
-	int i;
-	test(int ii = 0) : i(ii) { cout << "test()" << endl; }
-	test(int ii, int i2) : i(ii) { cout << "test()" << endl; }
-	test(const test &t) : i(t.i) { cout << "test(&)" << endl; }
-	test(const test &&t) : i(t.i) { cout << "test(&&)" << endl; }
-	~test() {
-		cout << "~test()" << endl;
+class base{
+public:
+	virtual void print() {
+		cout << "base()" << endl;
 	}
-	test& operator = (const test &t) {
-		cout << "operator=" << endl;
-		i = t.i;
-		return *this;
+	void printf() {
+		cout << "basef" << endl;
+	}
+	void printf(int) {
+		cout << "basef(int)" << endl;
 	}
 };
 
-void compare() {
-	test *p = new test(1);
-	throw std::runtime_error("hello");
-	delete p;
-	cout << "compare()" << endl;
-}
+class base1 {
+	virtual void printf() {
+		cout << "base1f" << endl;
+	}
+protected:
+	int i = 0;
+};
+
+class derived : public base , private base1 {
+public:
+	using base::printf;
+	derived() = default;
+	void print() override {
+		cout << "derived()" << endl;
+	}
+	void printf() {
+		cout << i << endl;
+	}
+private:
+	int j = 1;
+};
+
 int main(int argc, char** argv)
 {
-	std::allocator<test> alloc;
-	std::unique_ptr<test> p(alloc.allocate(10));
-	test *q = std::uninitialized_fill_n(p.get(), 10, 2);
-	alloc.destroy(p.get());
-	alloc.construct(p.get(), 3);
-	cout << p->i << endl;
-	cout << typeid(std::vector<test>::iterator).name() << endl;
-	
+	std::vector<int> v{ 1,3,4,5 };
+	cout << typeid(v.size()).name() << endl;
+	cout << UINT_MAX << endl;
 	system("pause");
 	return 0;
 }

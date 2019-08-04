@@ -18,6 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Query.h" />
+    <ClInclude Include="TextQuery.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Query.cpp" />
+    <ClCompile Include="TextQuery.cpp" />
+    <ClCompile Include="TextQuerymain.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{229D0CC5-91A6-40AD-BFE8-6810EE120CB2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -141,15 +150,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="QueryResult.cpp" />
-    <ClCompile Include="TextQuery.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="QueryResult.h" />
-    <ClInclude Include="TextQuery.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
