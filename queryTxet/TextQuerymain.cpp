@@ -18,24 +18,10 @@ int main(int argc, char* argv[])
 		cerr << "no input file" << endl;
 		return EXIT_FAILURE;
 	}
-//	runQueries(infile);
-	Query q = Query("Alice") & Query("Daddy");
-	//cout << q;
-	print(cout, q.eval(TextQuery(infile)));
+	runQueries(infile);
 	system("pause");
 	return 0;
 }
-
-//void runQueries(std::ifstream &infile) {
-//	TextQuery tq(infile);	
-//	while (true) {
-//		cout << "enter word to look for, or qu to quit: ";
-//		std::string s;
-//		if (!(cin >> s) || s == "q")
-//			break;
-//		print(cout, tq.query(s)) << endl;
-//	}
-//}
 
 
 void runQueries(ifstream &infile)
