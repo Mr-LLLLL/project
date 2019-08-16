@@ -1,4 +1,9 @@
 #include <iostream>
+#include <queue>
+#include <iomanip>
+#include <random>
+#include <regex>
+#include <bitset>
 #include <functional>
 #include <unordered_set>
 #include <set>
@@ -30,46 +35,61 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-class base{
+class base {
 public:
-	virtual void print() {
+	base() : _elem(0) {}
+	base(int i) : _elem(i) {
 		cout << "base()" << endl;
 	}
-	void printf() {
-		cout << "basef" << endl;
-	}
-	void printf(int) {
-		cout << "basef(int)" << endl;
+	virtual void vv() {}
+	int _elem;
+	~base() {
+		cout << "~base()" << endl;
 	}
 };
 
-class base1 {
-	virtual void printf() {
-		cout << "base1f" << endl;
-	}
-protected:
-	int i = 0;
-};
-
-class derived : public base , private base1 {
+class derived1 : virtual public base {
 public:
-	using base::printf;
-	derived() = default;
-	void print() override {
-		cout << "derived()" << endl;
-	}
-	void printf() {
-		cout << i << endl;
-	}
-private:
-	int j = 1;
+	derived1() : base(1) {}
 };
 
+class derived2 : virtual public base {
+public:
+	derived2() : base(2) {}
+};
+
+class deri : public derived2, public derived1 {
+};
+class out {
+	using hello = int;
+public:
+	class in;
+	out(int j) : i(j) {
+		cout << "out" << endl;
+	}
+	int i;
+	void print() {
+		cout << "print() " << endl;
+	}
+	~out() {
+		cout << "~out()" << endl;
+	}
+};
+class out::in {
+public:
+	hello i = 0;
+};
 int main(int argc, char** argv)
 {
-	std::vector<int> v{ 1,3,4,5 };
-	cout << typeid(v.size()).name() << endl;
-	cout << UINT_MAX << endl;
+	std::unordered_multimap<int, int> m{ { 2, 3} };
+	m.insert({ 2, 4 });
+	std::unordered_map<int, int> m1{ { 1,3 } };
+	m1.insert({ 2, 4 });
+	for (auto &i : m)
+		cout << i.second << endl;
+
+
+
 	system("pause");
 	return 0;
 }
