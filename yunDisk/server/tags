@@ -1,0 +1,552 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BASE64_H	include/base64.h	2;"	d
+CC	Makefile	/^CC=gcc$/;"	m
+CFG_LOG_MODULE	include/cfg.h	6;"	d
+CFG_LOG_PROC	include/cfg.h	7;"	d
+CFG_PATH	include/cfg.h	4;"	d
+CFLAGS	Makefile	/^CFLAGS=-std=c99 -Wall$/;"	m
+CGI_BIN_PATH	Makefile	/^CGI_BIN_PATH=bin_cgi$/;"	m
+CGI_SRC_PATH	Makefile	/^CGI_SRC_PATH=src_cgi$/;"	m
+COMMON_PATH	Makefile	/^COMMON_PATH=common$/;"	m
+CPPLFAGS	Makefile	/^CPPLFAGS=-I.\/include					\\$/;"	m
+CW_dataPadAdd	common/des.c	/^void  CW_dataPadAdd(int tag, unsigned char *date, unsigned int dateLen, $/;"	f
+CbcCtx	common/des.c	/^	unsigned char CbcCtx[DES_BLOCKLEN];$/;"	m	struct:__anon4	file:
+CbcCtx	common/des.c	/^	unsigned char CbcCtx[DES_BLOCKLEN];$/;"	m	struct:__anon5	file:
+DE1	common/des.c	17;"	d	file:
+DEALFILE_LOG_MODULE	src_cgi/dealfile_cgi.c	23;"	d	file:
+DEALFILE_LOG_PROC	src_cgi/dealfile_cgi.c	24;"	d	file:
+DEALSHAREFILE_LOG_MODULE	src_cgi/dealsharefile_cgi.c	23;"	d	file:
+DEALSHAREFILE_LOG_PROC	src_cgi/dealsharefile_cgi.c	24;"	d	file:
+DES3_CTX	common/des.c	/^} DES3_CTX;$/;"	t	typeref:struct:__anon5	file:
+DES_BLOCKLEN	common/des.c	21;"	d	file:
+DES_CTX	common/des.c	/^} DES_CTX;$/;"	t	typeref:struct:__anon4	file:
+DES_KEYBYTES	common/des.c	19;"	d	file:
+DES_KEYLONGS	common/des.c	20;"	d	file:
+DLLAPI	include/fcgi_stdio.h	28;"	d
+DLLAPI	include/fcgi_stdio.h	30;"	d
+DLLAPI	include/fcgiapp.h	27;"	d
+DLLAPI	include/fcgiapp.h	29;"	d
+DesDec	common/des.c	/^int DesDec($/;"	f
+DesDec_raw	common/des.c	/^int DesDec_raw($/;"	f
+DesEnc	common/des.c	/^int DesEnc($/;"	f
+DesEnc_raw	common/des.c	/^int DesEnc_raw($/;"	f
+EN0	common/des.c	16;"	d	file:
+ERR_FILECONT	common/des.c	757;"	d	file:
+ERR_MALLOC	common/des.c	755;"	d	file:
+F	include/md5.h	12;"	d
+FCGI_FAIL_ACCEPT_ON_INTR	include/fcgiapp.h	84;"	d
+FCGI_FILE	include/fcgi_stdio.h	/^} FCGI_FILE;$/;"	t	typeref:struct:__anon2
+FCGI_ToFILE	include/fcgi_stdio.h	52;"	d
+FCGI_ToFcgiStream	include/fcgi_stdio.h	53;"	d
+FCGI_errno	include/fcgiapp.h	/^    int FCGI_errno;                \/* error status *\/$/;"	m	struct:FCGX_Stream
+FCGI_stderr	include/fcgi_stdio.h	62;"	d
+FCGI_stdin	include/fcgi_stdio.h	60;"	d
+FCGI_stdout	include/fcgi_stdio.h	61;"	d
+FCGX_CALL_SEQ_ERROR	include/fcgiapp.h	43;"	d
+FCGX_PARAMS_ERROR	include/fcgiapp.h	42;"	d
+FCGX_PROTOCOL_ERROR	include/fcgiapp.h	41;"	d
+FCGX_ParamArray	include/fcgiapp.h	/^typedef char **FCGX_ParamArray;$/;"	t
+FCGX_Request	include/fcgiapp.h	/^typedef struct FCGX_Request {$/;"	s
+FCGX_Request	include/fcgiapp.h	/^} FCGX_Request;$/;"	t	typeref:struct:FCGX_Request
+FCGX_Stream	include/fcgiapp.h	/^typedef struct FCGX_Stream {$/;"	s
+FCGX_Stream	include/fcgiapp.h	/^} FCGX_Stream;$/;"	t	typeref:struct:FCGX_Stream
+FCGX_UNSUPPORTED_VERSION	include/fcgiapp.h	40;"	d
+FF	include/md5.h	17;"	d
+FIELD_ID_SIZE	include/redis_op.h	20;"	d
+FILE	include/fcgi_stdio.h	140;"	d
+FILE	include/fcgi_stdio.h	141;"	d
+FILE_NAME_HASH	include/redis_keys.h	38;"	d
+FILE_NAME_LEN	include/util_cgi.h	4;"	d
+FILE_PUBLIC_ZSET	include/redis_keys.h	27;"	d
+FILE_URL_LEN	include/util_cgi.h	6;"	d
+G	include/md5.h	13;"	d
+GG	include/md5.h	23;"	d
+H	include/md5.h	14;"	d
+HAVE_ARPA_INET_H	include/fcgi_config.h	5;"	d
+HAVE_DLFCN_H	include/fcgi_config.h	8;"	d
+HAVE_FILENO_PROTO	include/fcgi_config.h	11;"	d
+HAVE_FPOS	include/fcgi_config.h	14;"	d
+HAVE_INTTYPES_H	include/fcgi_config.h	17;"	d
+HAVE_LIBNSL	include/fcgi_config.h	23;"	d
+HAVE_LIMITS_H	include/fcgi_config.h	29;"	d
+HAVE_MEMORY_H	include/fcgi_config.h	32;"	d
+HAVE_NETDB_H	include/fcgi_config.h	35;"	d
+HAVE_NETINET_IN_H	include/fcgi_config.h	38;"	d
+HAVE_STDINT_H	include/fcgi_config.h	50;"	d
+HAVE_STDLIB_H	include/fcgi_config.h	53;"	d
+HAVE_STREAMBUF_CHAR_TYPE	include/fcgi_config.h	56;"	d
+HAVE_STRERROR	include/fcgi_config.h	59;"	d
+HAVE_STRINGS_H	include/fcgi_config.h	62;"	d
+HAVE_STRING_H	include/fcgi_config.h	65;"	d
+HAVE_SYS_PARAM_H	include/fcgi_config.h	68;"	d
+HAVE_SYS_SOCKET_H	include/fcgi_config.h	71;"	d
+HAVE_SYS_STAT_H	include/fcgi_config.h	74;"	d
+HAVE_SYS_TIME_H	include/fcgi_config.h	77;"	d
+HAVE_SYS_TYPES_H	include/fcgi_config.h	80;"	d
+HAVE_UNISTD_H	include/fcgi_config.h	83;"	d
+HH	include/md5.h	29;"	d
+HOST_NAME_LEN	include/util_cgi.h	7;"	d
+I	include/md5.h	15;"	d
+II	include/md5.h	35;"	d
+LIBS	Makefile	/^LIBS=-lfdfsclient	\\$/;"	m
+LOG	include/make_log.h	10;"	d
+LOG	include/make_log.h	15;"	d
+LOGIN_LOG_MODULE	src_cgi/login_cgi.c	24;"	d	file:
+LOGIN_LOG_PROC	src_cgi/login_cgi.c	25;"	d	file:
+MD5Decode	common/md5.c	/^void MD5Decode(unsigned int *output,unsigned char *input,unsigned int len)$/;"	f
+MD5Encode	common/md5.c	/^void MD5Encode(unsigned char *output,unsigned int *input,unsigned int len)$/;"	f
+MD5Final	common/md5.c	/^void MD5Final(MD5_CTX *context,unsigned char digest[16])$/;"	f
+MD5Init	common/md5.c	/^void MD5Init(MD5_CTX *context)$/;"	f
+MD5Transform	common/md5.c	/^void MD5Transform(unsigned int state[4],unsigned char block[64])$/;"	f
+MD5Update	common/md5.c	/^void MD5Update(MD5_CTX *context,unsigned char *input,unsigned int inputlen)$/;"	f
+MD5_CTX	include/md5.h	/^}MD5_CTX;$/;"	t	typeref:struct:__anon1
+MD5_H	include/md5.h	2;"	d
+MD5_LEN	include/util_cgi.h	10;"	d
+MD5_LOG_MODULE	src_cgi/md5_cgi.c	21;"	d	file:
+MD5_LOG_PROC	src_cgi/md5_cgi.c	22;"	d	file:
+MYFILES_LOG_MODULE	src_cgi/myfiles_cgi.c	21;"	d	file:
+MYFILES_LOG_PROC	src_cgi/myfiles_cgi.c	22;"	d	file:
+OPENCOMM_DesDecRaw	common/des.c	/^unsigned long OPENCOMM_DesDecRaw($/;"	f
+OPENCOMM_DesEncRaw	common/des.c	/^unsigned long OPENCOMM_DesEncRaw($/;"	f
+OPENCOMM_DesExpandDecKey	common/des.c	/^unsigned long OPENCOMM_DesExpandDecKey($/;"	f
+OPENCOMM_DesExpandEncKey	common/des.c	/^unsigned long OPENCOMM_DesExpandEncKey($/;"	f
+PACKAGE	include/fcgi_config.h	89;"	d
+PADDING	common/md5.c	/^unsigned char PADDING[]={0x80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,$/;"	v
+PIC_NAME_LEN	include/util_cgi.h	14;"	d
+PIC_URL_LEN	include/util_cgi.h	15;"	d
+PWD_LEN	include/util_cgi.h	11;"	d
+PrintEnv	test/echo.c	/^static void PrintEnv(char *label, char **envp)$/;"	f	file:
+PrintEnv	test/fastcgi_demo.c	/^static void PrintEnv(char *label, char **envp)$/;"	f	file:
+RCOMMANDS	include/redis_op.h	/^typedef char (*RCOMMANDS)[REDIS_COMMAND_SIZE];\/* redis 存放批量 命令字符串数组类型 *\/$/;"	t
+REDIS_COMMAND_SIZE	include/redis_op.h	19;"	d
+REDIS_LOG_MODULE	include/redis_op.h	16;"	d
+REDIS_LOG_PROC	include/redis_op.h	17;"	d
+REDIS_SERVER_IP	include/redis_keys.h	9;"	d
+REDIS_SERVER_PORT	include/redis_keys.h	10;"	d
+REG_LOG_MODULE	src_cgi/reg_cgi.c	20;"	d	file:
+REG_LOG_PROC	src_cgi/reg_cgi.c	21;"	d	file:
+RFIELDS	include/redis_op.h	/^typedef char (*RFIELDS)[FIELD_ID_SIZE];        \/* redis hash表存放批量field字符串数组类型 *\/$/;"	t
+ROTATE_LEFT	include/md5.h	16;"	d
+RVALUES	include/redis_op.h	/^typedef char (*RVALUES)[VALUES_ID_SIZE];    \/* redis 表存放批量value字符串数组类型 *\/$/;"	t
+SHAREFILES_LOG_MODULE	src_cgi/sharefiles_cgi.c	24;"	d	file:
+SHAREFILES_LOG_PROC	src_cgi/sharefiles_cgi.c	25;"	d	file:
+SP1	common/des.c	/^static unsigned long SP1[64] ={$/;"	v	file:
+SP2	common/des.c	/^static unsigned long SP2[64]={$/;"	v	file:
+SP3	common/des.c	/^static unsigned long SP3[64]={ $/;"	v	file:
+SP4	common/des.c	/^static unsigned long SP4[64]={             $/;"	v	file:
+SP5	common/des.c	/^static unsigned long SP5[64]={   $/;"	v	file:
+SP6	common/des.c	/^static unsigned long SP6[64]={ $/;"	v	file:
+SP7	common/des.c	/^static unsigned long SP7[64] = {$/;"	v	file:
+SP8	common/des.c	/^static unsigned long SP8[64] = {$/;"	v	file:
+SQL_MAX_LEN	include/deal_mysql.h	6;"	d
+STDC_HEADERS	include/fcgi_config.h	96;"	d
+SUFFIX_LEN	include/util_cgi.h	13;"	d
+TEMP_BUF_MAX_LEN	include/util_cgi.h	5;"	d
+TEST_PATH	Makefile	/^TEST_PATH=test$/;"	m
+TIME_STRING_LEN	include/util_cgi.h	12;"	d
+TOKEN_LEN	include/util_cgi.h	9;"	d
+UPLOAD_LOG_MODULE	src_cgi/upload_cgi.c	23;"	d	file:
+UPLOAD_LOG_PROC	src_cgi/upload_cgi.c	24;"	d	file:
+USER_NAME_LEN	include/util_cgi.h	8;"	d
+USER_PASSWORD_KEY	common/des.c	699;"	d	file:
+UTIL_LOG_MODULE	include/util_cgi.h	17;"	d
+UTIL_LOG_PROC	include/util_cgi.h	18;"	d
+VALUES_ID_SIZE	include/redis_op.h	21;"	d
+VERSION	include/fcgi_config.h	102;"	d
+_CFG_H_	include/cfg.h	2;"	d
+_DEAL_MYSQL_H_	include/deal_mysql.h	2;"	d
+_FCGIAPP_H	include/fcgiapp.h	16;"	d
+_FCGI_STDIO	include/fcgi_stdio.h	16;"	d
+_FDFS_API_H	test/fdfs_api.h	2;"	d
+_MAKE_LOG_H	include/make_log.h	2;"	d
+_OPENDESS_H_	include/des.h	7;"	d
+_REDIS_KEYS_H_	include/redis_keys.h	7;"	d
+_REDIS_OP_H_	include/redis_op.h	7;"	d
+_UTIL_CGI_H_	include/util_cgi.h	2;"	d
+appStatus	include/fcgiapp.h	/^    int appStatus;$/;"	m	struct:FCGX_Request
+base64_decode	common/base64.c	/^int base64_decode( const char * base64, unsigned char * bindata )$/;"	f
+base64_encode	common/base64.c	/^char * base64_encode( const unsigned char * bindata, int binlength, char * base64 )$/;"	f
+base64char	common/base64.c	/^const char * base64char = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/";$/;"	v
+bigbyte	common/des.c	/^static unsigned long bigbyte[24] = {$/;"	v	file:
+buffer	common/cJSON.c	/^typedef struct {char *buffer; int length; int offset; } printbuffer;$/;"	m	struct:__anon3	file:
+buffer	include/md5.h	/^    unsigned char buffer[64];   $/;"	m	struct:__anon1
+bytebit	common/des.c	/^static unsigned short bytebit[8] = {0200,0100,040,020,010,04,02,01 };$/;"	v	file:
+cJSON	include/cJSON.h	/^typedef struct cJSON {$/;"	s
+cJSON	include/cJSON.h	/^} cJSON;$/;"	t	typeref:struct:cJSON
+cJSON_AddBoolToObject	include/cJSON.h	138;"	d
+cJSON_AddFalseToObject	include/cJSON.h	137;"	d
+cJSON_AddItemReferenceToArray	common/cJSON.c	/^void	cJSON_AddItemReferenceToArray(cJSON *array, cJSON *item)						{cJSON_AddItemToArray(array,create_reference(item));}$/;"	f
+cJSON_AddItemReferenceToObject	common/cJSON.c	/^void	cJSON_AddItemReferenceToObject(cJSON *object,const char *string,cJSON *item)	{cJSON_AddItemToObject(object,string,create_reference(item));}$/;"	f
+cJSON_AddItemToArray	common/cJSON.c	/^void   cJSON_AddItemToArray(cJSON *array, cJSON *item)						{cJSON *c=array->child;if (!item) return; if (!c) {array->child=item;} else {while (c && c->next) c=c->next; suffix_object(c,item);}}$/;"	f
+cJSON_AddItemToObject	common/cJSON.c	/^void   cJSON_AddItemToObject(cJSON *object,const char *string,cJSON *item)	{if (!item) return; if (item->string) cJSON_free(item->string);item->string=cJSON_strdup(string);cJSON_AddItemToArray(object,item);}$/;"	f
+cJSON_AddItemToObjectCS	common/cJSON.c	/^void   cJSON_AddItemToObjectCS(cJSON *object,const char *string,cJSON *item)	{if (!item) return; if (!(item->type&cJSON_StringIsConst) && item->string) cJSON_free(item->string);item->string=(char*)string;item->type|=cJSON_StringIsConst;cJSON_AddItemToArray(object,item);}$/;"	f
+cJSON_AddNullToObject	include/cJSON.h	135;"	d
+cJSON_AddNumberToObject	include/cJSON.h	139;"	d
+cJSON_AddStringToObject	include/cJSON.h	140;"	d
+cJSON_AddTrueToObject	include/cJSON.h	136;"	d
+cJSON_Array	include/cJSON.h	38;"	d
+cJSON_CreateArray	common/cJSON.c	/^cJSON *cJSON_CreateArray(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_Array;return item;}$/;"	f
+cJSON_CreateBool	common/cJSON.c	/^cJSON *cJSON_CreateBool(int b)					{cJSON *item=cJSON_New_Item();if(item)item->type=b?cJSON_True:cJSON_False;return item;}$/;"	f
+cJSON_CreateDoubleArray	common/cJSON.c	/^cJSON *cJSON_CreateDoubleArray(const double *numbers,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateFalse	common/cJSON.c	/^cJSON *cJSON_CreateFalse(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_False;return item;}$/;"	f
+cJSON_CreateFloatArray	common/cJSON.c	/^cJSON *cJSON_CreateFloatArray(const float *numbers,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateIntArray	common/cJSON.c	/^cJSON *cJSON_CreateIntArray(const int *numbers,int count)		{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateNull	common/cJSON.c	/^cJSON *cJSON_CreateNull(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_NULL;return item;}$/;"	f
+cJSON_CreateNumber	common/cJSON.c	/^cJSON *cJSON_CreateNumber(double num)			{cJSON *item=cJSON_New_Item();if(item){item->type=cJSON_Number;item->valuedouble=num;item->valueint=(int)num;}return item;}$/;"	f
+cJSON_CreateObject	common/cJSON.c	/^cJSON *cJSON_CreateObject(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_Object;return item;}$/;"	f
+cJSON_CreateString	common/cJSON.c	/^cJSON *cJSON_CreateString(const char *string)	{cJSON *item=cJSON_New_Item();if(item){item->type=cJSON_String;item->valuestring=cJSON_strdup(string);}return item;}$/;"	f
+cJSON_CreateStringArray	common/cJSON.c	/^cJSON *cJSON_CreateStringArray(const char **strings,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateString(strings[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateTrue	common/cJSON.c	/^cJSON *cJSON_CreateTrue(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_True;return item;}$/;"	f
+cJSON_Delete	common/cJSON.c	/^void cJSON_Delete(cJSON *c)$/;"	f
+cJSON_DeleteItemFromArray	common/cJSON.c	/^void   cJSON_DeleteItemFromArray(cJSON *array,int which)			{cJSON_Delete(cJSON_DetachItemFromArray(array,which));}$/;"	f
+cJSON_DeleteItemFromObject	common/cJSON.c	/^void   cJSON_DeleteItemFromObject(cJSON *object,const char *string) {cJSON_Delete(cJSON_DetachItemFromObject(object,string));}$/;"	f
+cJSON_DetachItemFromArray	common/cJSON.c	/^cJSON *cJSON_DetachItemFromArray(cJSON *array,int which)			{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) return 0;$/;"	f
+cJSON_DetachItemFromObject	common/cJSON.c	/^cJSON *cJSON_DetachItemFromObject(cJSON *object,const char *string) {int i=0;cJSON *c=object->child;while (c && cJSON_strcasecmp(c->string,string)) i++,c=c->next;if (c) return cJSON_DetachItemFromArray(object,i);return 0;}$/;"	f
+cJSON_Duplicate	common/cJSON.c	/^cJSON *cJSON_Duplicate(cJSON *item,int recurse)$/;"	f
+cJSON_False	include/cJSON.h	33;"	d
+cJSON_GetArrayItem	common/cJSON.c	/^cJSON *cJSON_GetArrayItem(cJSON *array,int item)				{cJSON *c=array->child;  while (c && item>0) item--,c=c->next; return c;}$/;"	f
+cJSON_GetArraySize	common/cJSON.c	/^int    cJSON_GetArraySize(cJSON *array)							{cJSON *c=array->child;int i=0;while(c)i++,c=c->next;return i;}$/;"	f
+cJSON_GetErrorPtr	common/cJSON.c	/^const char *cJSON_GetErrorPtr(void) {return ep;}$/;"	f
+cJSON_GetObjectItem	common/cJSON.c	/^cJSON *cJSON_GetObjectItem(cJSON *object,const char *string)	{cJSON *c=object->child; while (c && cJSON_strcasecmp(c->string,string)) c=c->next; return c;}$/;"	f
+cJSON_Hooks	include/cJSON.h	/^typedef struct cJSON_Hooks {$/;"	s
+cJSON_Hooks	include/cJSON.h	/^} cJSON_Hooks;$/;"	t	typeref:struct:cJSON_Hooks
+cJSON_InitHooks	common/cJSON.c	/^void cJSON_InitHooks(cJSON_Hooks* hooks)$/;"	f
+cJSON_InsertItemInArray	common/cJSON.c	/^void   cJSON_InsertItemInArray(cJSON *array,int which,cJSON *newitem)		{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) {cJSON_AddItemToArray(array,newitem);return;}$/;"	f
+cJSON_IsReference	include/cJSON.h	41;"	d
+cJSON_Minify	common/cJSON.c	/^void cJSON_Minify(char *json)$/;"	f
+cJSON_NULL	include/cJSON.h	35;"	d
+cJSON_New_Item	common/cJSON.c	/^static cJSON *cJSON_New_Item(void)$/;"	f	file:
+cJSON_Number	include/cJSON.h	36;"	d
+cJSON_Object	include/cJSON.h	39;"	d
+cJSON_Parse	common/cJSON.c	/^cJSON *cJSON_Parse(const char *value) {return cJSON_ParseWithOpts(value,0,0);}$/;"	f
+cJSON_ParseWithOpts	common/cJSON.c	/^cJSON *cJSON_ParseWithOpts(const char *value,const char **return_parse_end,int require_null_terminated)$/;"	f
+cJSON_Print	common/cJSON.c	/^char *cJSON_Print(cJSON *item)				{return print_value(item,0,1,0);}$/;"	f
+cJSON_PrintBuffered	common/cJSON.c	/^char *cJSON_PrintBuffered(cJSON *item,int prebuffer,int fmt)$/;"	f
+cJSON_PrintUnformatted	common/cJSON.c	/^char *cJSON_PrintUnformatted(cJSON *item)	{return print_value(item,0,0,0);}$/;"	f
+cJSON_ReplaceItemInArray	common/cJSON.c	/^void   cJSON_ReplaceItemInArray(cJSON *array,int which,cJSON *newitem)		{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) return;$/;"	f
+cJSON_ReplaceItemInObject	common/cJSON.c	/^void   cJSON_ReplaceItemInObject(cJSON *object,const char *string,cJSON *newitem){int i=0;cJSON *c=object->child;while(c && cJSON_strcasecmp(c->string,string))i++,c=c->next;if(c){newitem->string=cJSON_strdup(string);cJSON_ReplaceItemInArray(object,i,newitem);}}$/;"	f
+cJSON_SetIntValue	include/cJSON.h	143;"	d
+cJSON_SetNumberValue	include/cJSON.h	144;"	d
+cJSON_String	include/cJSON.h	37;"	d
+cJSON_StringIsConst	include/cJSON.h	42;"	d
+cJSON_True	include/cJSON.h	34;"	d
+cJSON__h	include/cJSON.h	24;"	d
+cJSON_free	common/cJSON.c	/^static void (*cJSON_free)(void *ptr) = free;$/;"	v	file:
+cJSON_malloc	common/cJSON.c	/^static void *(*cJSON_malloc)(size_t sz) = malloc;$/;"	v	file:
+cJSON_strcasecmp	common/cJSON.c	/^static int cJSON_strcasecmp(const char *s1,const char *s2)$/;"	f	file:
+cJSON_strdup	common/cJSON.c	/^static char* cJSON_strdup(const char* str)$/;"	f	file:
+ca_log_lock	common/make_log.c	/^pthread_mutex_t ca_log_lock=PTHREAD_MUTEX_INITIALIZER;$/;"	v
+cancel_share_file	src_cgi/dealsharefile_cgi.c	/^int cancel_share_file(char *user, char *md5, char *filename)$/;"	f
+check_user_pwd	src_cgi/login_cgi.c	/^int check_user_pwd( char *user, char *pwd )$/;"	f
+child	include/cJSON.h	/^	struct cJSON *child;		\/* An array or object item will have a child pointer pointing to a chain of the items in the array\/object. *\/$/;"	m	struct:cJSON	typeref:struct:cJSON::cJSON
+clearerr	include/fcgi_stdio.h	223;"	d
+clearerr	include/fcgi_stdio.h	224;"	d
+cookey	common/des.c	/^void cookey(register unsigned long *raw1, unsigned long *dough)$/;"	f
+count	include/md5.h	/^    unsigned int count[2];$/;"	m	struct:__anon1
+create_reference	common/cJSON.c	/^static cJSON *create_reference(cJSON *item) {cJSON *ref=cJSON_New_Item();if (!ref) return 0;memcpy(ref,item,sizeof(cJSON));ref->string=0;ref->type|=cJSON_IsReference;ref->next=ref->prev=0;return ref;}$/;"	f	file:
+data	include/fcgiapp.h	/^    void *data;$/;"	m	struct:FCGX_Stream
+deal_md5	src_cgi/md5_cgi.c	/^int deal_md5(char *user, char *md5, char *filename)$/;"	f
+dealfile	Makefile	/^dealfile=$(CGI_BIN_PATH)\/dealfile$/;"	m
+dealsharefile	Makefile	/^dealsharefile=$(CGI_BIN_PATH)\/dealsharefile$/;"	m
+del_file	src_cgi/dealfile_cgi.c	/^int del_file(char *user, char *md5, char *filename)$/;"	f
+desfunc	common/des.c	/^void desfunc(register unsigned long *block,register unsigned long *keys)$/;"	f
+deskey	common/des.c	/^void deskey(unsigned char *key,short edf, unsigned long *kn)$/;"	f
+dk	common/des.c	/^	unsigned char dk[DES_KEYBYTES];$/;"	m	struct:__anon4	file:
+dk1	common/des.c	/^	unsigned char dk1[DES_KEYBYTES];$/;"	m	struct:__anon5	file:
+dk1Len	common/des.c	/^	int	dk1Len;$/;"	m	struct:__anon5	file:
+dk2	common/des.c	/^	unsigned char dk2[DES_KEYBYTES];$/;"	m	struct:__anon5	file:
+dk2Len	common/des.c	/^	int	dk2Len;$/;"	m	struct:__anon5	file:
+dkLen	common/des.c	/^	int	dkLen;$/;"	m	struct:__anon4	file:
+dumpmsg_to_file	common/make_log.c	/^int dumpmsg_to_file(char *module_name, char *proc_name, const char *filename,$/;"	f
+ek	common/des.c	/^	unsigned char ek[DES_KEYBYTES];$/;"	m	struct:__anon4	file:
+ek1	common/des.c	/^	unsigned char ek1[DES_KEYBYTES];$/;"	m	struct:__anon5	file:
+ek1Len	common/des.c	/^	int	ek1Len;$/;"	m	struct:__anon5	file:
+ek2	common/des.c	/^	unsigned char ek2[DES_KEYBYTES];$/;"	m	struct:__anon5	file:
+ek2Len	common/des.c	/^	int	ek2Len;$/;"	m	struct:__anon5	file:
+ekLen	common/des.c	/^	int	ekLen;$/;"	m	struct:__anon4	file:
+emptyBuffProc	include/fcgiapp.h	/^    void (*emptyBuffProc) (struct FCGX_Stream *stream, int doClose);$/;"	m	struct:FCGX_Stream
+ensure	common/cJSON.c	/^static char* ensure(printbuffer *p,int needed)$/;"	f	file:
+envp	include/fcgiapp.h	/^	char **envp;$/;"	m	struct:FCGX_Request
+ep	common/cJSON.c	/^static const char *ep;$/;"	v	file:
+err	include/fcgiapp.h	/^    FCGX_Stream *err;$/;"	m	struct:FCGX_Request
+fcgx_stream	include/fcgi_stdio.h	/^    FCGX_Stream *fcgx_stream;$/;"	m	struct:__anon2
+fclose	include/fcgi_stdio.h	155;"	d
+fclose	include/fcgi_stdio.h	156;"	d
+fdfs_upload_file	test/fdfs_api.c	/^int fdfs_upload_file(const char* filename, char* fileid)$/;"	f
+fdfs_upload_file1	test/fdfs_api.c	/^int fdfs_upload_file1(const char* filename, char* fileid, int size)$/;"	f
+fdopen	include/fcgi_stdio.h	231;"	d
+fdopen	include/fcgi_stdio.h	232;"	d
+feof	include/fcgi_stdio.h	219;"	d
+feof	include/fcgi_stdio.h	220;"	d
+ferror	include/fcgi_stdio.h	221;"	d
+ferror	include/fcgi_stdio.h	222;"	d
+fflush	include/fcgi_stdio.h	157;"	d
+fflush	include/fcgi_stdio.h	158;"	d
+fgetc	include/fcgi_stdio.h	178;"	d
+fgetc	include/fcgi_stdio.h	179;"	d
+fgetpos	include/fcgi_stdio.h	173;"	d
+fgetpos	include/fcgi_stdio.h	174;"	d
+fgets	include/fcgi_stdio.h	187;"	d
+fgets	include/fcgi_stdio.h	188;"	d
+fileno	include/fcgi_stdio.h	229;"	d
+fileno	include/fcgi_stdio.h	230;"	d
+fillBuffProc	include/fcgiapp.h	/^    void (*fillBuffProc) (struct FCGX_Stream *stream);$/;"	m	struct:FCGX_Stream
+firstByteMark	common/cJSON.c	/^static const unsigned char firstByteMark[7] = { 0x00, 0x00, 0xC0, 0xE0, 0xF0, 0xF8, 0xFC };$/;"	v	file:
+flags	include/fcgiapp.h	/^	int flags;$/;"	m	struct:FCGX_Request
+fopen	include/fcgi_stdio.h	153;"	d
+fopen	include/fcgi_stdio.h	154;"	d
+fprintf	include/fcgi_stdio.h	204;"	d
+fprintf	include/fcgi_stdio.h	205;"	d
+fputc	include/fcgi_stdio.h	192;"	d
+fputc	include/fcgi_stdio.h	193;"	d
+fputs	include/fcgi_stdio.h	199;"	d
+fputs	include/fcgi_stdio.h	200;"	d
+fread	include/fcgi_stdio.h	214;"	d
+fread	include/fcgi_stdio.h	215;"	d
+free_fn	include/cJSON.h	/^      void (*free_fn)(void *ptr);$/;"	m	struct:cJSON_Hooks
+freopen	include/fcgi_stdio.h	159;"	d
+freopen	include/fcgi_stdio.h	160;"	d
+fseek	include/fcgi_stdio.h	167;"	d
+fseek	include/fcgi_stdio.h	168;"	d
+fsetpos	include/fcgi_stdio.h	175;"	d
+fsetpos	include/fcgi_stdio.h	176;"	d
+ftell	include/fcgi_stdio.h	169;"	d
+ftell	include/fcgi_stdio.h	170;"	d
+fwrite	include/fcgi_stdio.h	216;"	d
+fwrite	include/fcgi_stdio.h	217;"	d
+get_cfg_value	common/cfg.c	/^int get_cfg_value(const char *profile, char *title, char *key, char *value)$/;"	f
+get_count_json_info	src_cgi/myfiles_cgi.c	/^int get_count_json_info(char *buf, char *user, char *token)$/;"	f
+get_file_suffix	common/util_cgi.c	/^int get_file_suffix(const char *file_name, char *suffix)$/;"	f
+get_fileslist_json_info	src_cgi/myfiles_cgi.c	/^int get_fileslist_json_info(char *buf, char *user, char *token, int *p_start, int *p_count)$/;"	f
+get_fileslist_json_info	src_cgi/sharefiles_cgi.c	/^int get_fileslist_json_info(char *buf, int *p_start, int *p_count)$/;"	f
+get_json_info	src_cgi/dealfile_cgi.c	/^int get_json_info(char *buf, char *user, char *token, char *md5, char *filename)$/;"	f
+get_json_info	src_cgi/dealsharefile_cgi.c	/^int get_json_info(char *buf, char *user, char *md5, char *filename)$/;"	f
+get_login_info	src_cgi/login_cgi.c	/^int get_login_info(char *login_buf, char *user, char *pwd)$/;"	f
+get_md5_info	src_cgi/md5_cgi.c	/^int get_md5_info(char *buf, char *user, char *token, char *md5, char *filename)$/;"	f
+get_mysql_info	common/cfg.c	/^int get_mysql_info(char *mysql_user, char *mysql_pwd, char *mysql_db)$/;"	f
+get_ranking_filelist	src_cgi/sharefiles_cgi.c	/^int get_ranking_filelist(int start, int count)$/;"	f
+get_reg_info	src_cgi/reg_cgi.c	/^int get_reg_info(char *reg_buf, char *user, char *nick_name, char *pwd, char *tel, char *email)$/;"	f
+get_share_filelist	src_cgi/sharefiles_cgi.c	/^int get_share_filelist(int start, int count)$/;"	f
+get_share_files_count	src_cgi/sharefiles_cgi.c	/^void get_share_files_count()$/;"	f
+get_user_filelist	src_cgi/myfiles_cgi.c	/^int get_user_filelist(char *cmd, char *user, int start, int count)$/;"	f
+get_user_files_count	src_cgi/myfiles_cgi.c	/^void get_user_files_count(char *user, int ret)$/;"	f
+getc	include/fcgi_stdio.h	180;"	d
+getc	include/fcgi_stdio.h	181;"	d
+getchar	include/fcgi_stdio.h	182;"	d
+getchar	include/fcgi_stdio.h	183;"	d
+gets	include/fcgi_stdio.h	189;"	d
+gets	include/fcgi_stdio.h	190;"	d
+in	include/fcgiapp.h	/^    FCGX_Stream *in;$/;"	m	struct:FCGX_Request
+ipcFd	include/fcgiapp.h	/^    int ipcFd;               \/* < 0 means no connection *\/$/;"	m	struct:FCGX_Request
+isBeginProcessed	include/fcgiapp.h	/^    int isBeginProcessed;     \/* FCGI_BEGIN_REQUEST seen *\/$/;"	m	struct:FCGX_Request
+isClosed	include/fcgiapp.h	/^    int isClosed;$/;"	m	struct:FCGX_Stream
+isReader	include/fcgiapp.h	/^    int isReader;$/;"	m	struct:FCGX_Stream
+is_directory	redis.sh	/^is_directory()$/;"	f
+is_regfile	redis.sh	/^is_regfile()$/;"	f
+keepConnection	include/fcgiapp.h	/^    int keepConnection;       \/* don't close ipcFd at end of request *\/$/;"	m	struct:FCGX_Request
+length	common/cJSON.c	/^typedef struct {char *buffer; int length; int offset; } printbuffer;$/;"	m	struct:__anon3	file:
+listen_sock	include/fcgiapp.h	/^	int listen_sock;$/;"	m	struct:FCGX_Request
+login	Makefile	/^login=$(CGI_BIN_PATH)\/login$/;"	m
+main	Makefile	/^main=main$/;"	m
+main	src_cgi/dealfile_cgi.c	/^int main()$/;"	f
+main	src_cgi/dealsharefile_cgi.c	/^int main()$/;"	f
+main	src_cgi/login_cgi.c	/^int main()$/;"	f
+main	src_cgi/md5_cgi.c	/^int main()$/;"	f
+main	src_cgi/myfiles_cgi.c	/^int main()$/;"	f
+main	src_cgi/reg_cgi.c	/^int main()$/;"	f
+main	src_cgi/sharefiles_cgi.c	/^int main()$/;"	f
+main	src_cgi/upload_cgi.c	/^int main()$/;"	f
+main	test/echo.c	/^int main ()$/;"	f
+main	test/fastcgi_demo.c	/^int main ()$/;"	f
+main	test/fdfs_upload_file.c	/^int main(int argc, char *argv[])$/;"	f
+main	test/main.c	/^int main(int argc, const char* argv[])$/;"	f
+main	test/myredis.c	/^int main(int argc, const char* argv[])$/;"	f
+main	test/redis_example.c	/^int main(int argc, char **argv) {$/;"	f
+make_file_url	src_cgi/upload_cgi.c	/^int make_file_url(char *fileid, char *fdfs_file_url)$/;"	f
+make_hmset_command	common/redis_op.c	/^static char* make_hmset_command(char* key, unsigned int element_num, RFIELDS fields, RVALUES values)$/;"	f	file:
+make_path	common/make_log.c	/^int make_path(char *path, char *module_name, char *proc_name)$/;"	f
+malloc_fn	include/cJSON.h	/^      void *(*malloc_fn)(size_t sz);$/;"	m	struct:cJSON_Hooks
+md5	Makefile	/^md5=$(CGI_BIN_PATH)\/md5$/;"	m
+memstr	common/util_cgi.c	/^char* memstr(char* full_data, int full_data_len, char* substr) $/;"	f
+msql_conn	common/deal_mysql.c	/^MYSQL* msql_conn(char *user_name, char* passwd, char *db_name)$/;"	f
+myfiles	Makefile	/^myfiles=$(CGI_BIN_PATH)\/myfiles$/;"	m
+myic_DESDecrypt	common/des.c	/^int myic_DESDecrypt($/;"	f
+myic_DESEncrypt	common/des.c	/^int myic_DESEncrypt($/;"	f
+mysql_db	src_cgi/dealfile_cgi.c	/^static char mysql_db[128] = {0};$/;"	v	file:
+mysql_db	src_cgi/dealsharefile_cgi.c	/^static char mysql_db[128] = {0};$/;"	v	file:
+mysql_db	src_cgi/md5_cgi.c	/^static char mysql_db[128] = {0};$/;"	v	file:
+mysql_db	src_cgi/myfiles_cgi.c	/^static char mysql_db[128] = {0};$/;"	v	file:
+mysql_db	src_cgi/sharefiles_cgi.c	/^static char mysql_db[128] = {0};$/;"	v	file:
+mysql_db	src_cgi/upload_cgi.c	/^static char mysql_db[128] = {0};$/;"	v	file:
+mysql_pwd	src_cgi/dealfile_cgi.c	/^static char mysql_pwd[128] = {0};$/;"	v	file:
+mysql_pwd	src_cgi/dealsharefile_cgi.c	/^static char mysql_pwd[128] = {0};$/;"	v	file:
+mysql_pwd	src_cgi/md5_cgi.c	/^static char mysql_pwd[128] = {0};$/;"	v	file:
+mysql_pwd	src_cgi/myfiles_cgi.c	/^static char mysql_pwd[128] = {0};$/;"	v	file:
+mysql_pwd	src_cgi/sharefiles_cgi.c	/^static char mysql_pwd[128] = {0};$/;"	v	file:
+mysql_pwd	src_cgi/upload_cgi.c	/^static char mysql_pwd[128] = {0};$/;"	v	file:
+mysql_user	src_cgi/dealfile_cgi.c	/^static char mysql_user[128] = {0};$/;"	v	file:
+mysql_user	src_cgi/dealsharefile_cgi.c	/^static char mysql_user[128] = {0};$/;"	v	file:
+mysql_user	src_cgi/md5_cgi.c	/^static char mysql_user[128] = {0};$/;"	v	file:
+mysql_user	src_cgi/myfiles_cgi.c	/^static char mysql_user[128] = {0};$/;"	v	file:
+mysql_user	src_cgi/sharefiles_cgi.c	/^static char mysql_user[128] = {0};$/;"	v	file:
+mysql_user	src_cgi/upload_cgi.c	/^static char mysql_user[128] = {0};$/;"	v	file:
+nWriters	include/fcgiapp.h	/^    int nWriters;             \/* number of open writers (0..2) *\/$/;"	m	struct:FCGX_Request
+next	include/cJSON.h	/^	struct cJSON *next,*prev;	\/* next\/prev allow you to walk array\/object chains. Alternatively, use GetArraySize\/GetArrayItem\/GetObjectItem *\/$/;"	m	struct:cJSON	typeref:struct:cJSON::cJSON
+offset	common/cJSON.c	/^typedef struct {char *buffer; int length; int offset; } printbuffer;$/;"	m	struct:__anon3	file:
+out	include/fcgiapp.h	/^    FCGX_Stream *out;$/;"	m	struct:FCGX_Request
+out_put_file	common/make_log.c	/^int out_put_file(char *path, char *buf)$/;"	f
+paramsPtr	include/fcgiapp.h	/^    struct Params *paramsPtr;$/;"	m	struct:FCGX_Request	typeref:struct:FCGX_Request::Params
+parse_array	common/cJSON.c	/^static const char *parse_array(cJSON *item,const char *value)$/;"	f	file:
+parse_hex4	common/cJSON.c	/^static unsigned parse_hex4(const char *str)$/;"	f	file:
+parse_number	common/cJSON.c	/^static const char *parse_number(cJSON *item,const char *num)$/;"	f	file:
+parse_object	common/cJSON.c	/^static const char *parse_object(cJSON *item,const char *value)$/;"	f	file:
+parse_string	common/cJSON.c	/^static const char *parse_string(cJSON *item,const char *str)$/;"	f	file:
+parse_value	common/cJSON.c	/^static const char *parse_value(cJSON *item,const char *value)$/;"	f	file:
+pc1	common/des.c	/^static unsigned char pc1[56] = {$/;"	v	file:
+pc2	common/des.c	/^static unsigned char pc2[48] = {$/;"	v	file:
+pclose	include/fcgi_stdio.h	235;"	d
+pclose	include/fcgi_stdio.h	236;"	d
+perror	include/fcgi_stdio.h	150;"	d
+perror	include/fcgi_stdio.h	151;"	d
+popen	include/fcgi_stdio.h	233;"	d
+popen	include/fcgi_stdio.h	234;"	d
+pow2gt	common/cJSON.c	/^static int pow2gt (int x)	{	--x;	x|=x>>1;	x|=x>>2;	x|=x>>4;	x|=x>>8;	x|=x>>16;	return x+1;	}$/;"	f	file:
+prev	include/cJSON.h	/^	struct cJSON *next,*prev;	\/* next\/prev allow you to walk array\/object chains. Alternatively, use GetArraySize\/GetArrayItem\/GetObjectItem *\/$/;"	m	struct:cJSON	typeref:struct:cJSON::
+print_array	common/cJSON.c	/^static char *print_array(cJSON *item,int depth,int fmt,printbuffer *p)$/;"	f	file:
+print_error	common/deal_mysql.c	/^void print_error(MYSQL *conn, const char *title)$/;"	f
+print_number	common/cJSON.c	/^static char *print_number(cJSON *item,printbuffer *p)$/;"	f	file:
+print_object	common/cJSON.c	/^static char *print_object(cJSON *item,int depth,int fmt,printbuffer *p)$/;"	f	file:
+print_string	common/cJSON.c	/^static char *print_string(cJSON *item,printbuffer *p)	{return print_string_ptr(item->valuestring,p);}$/;"	f	file:
+print_string_ptr	common/cJSON.c	/^static char *print_string_ptr(const char *str,printbuffer *p)$/;"	f	file:
+print_value	common/cJSON.c	/^static char *print_value(cJSON *item,int depth,int fmt,printbuffer *p)$/;"	f	file:
+printbuffer	common/cJSON.c	/^typedef struct {char *buffer; int length; int offset; } printbuffer;$/;"	t	typeref:struct:__anon3	file:
+printf	include/fcgi_stdio.h	206;"	d
+printf	include/fcgi_stdio.h	207;"	d
+process_result_one	common/deal_mysql.c	/^int process_result_one(MYSQL *conn, char *sql_cmd, char *buf)$/;"	f
+process_result_test	common/deal_mysql.c	/^void process_result_test(MYSQL *conn, MYSQL_RES *res_set)$/;"	f
+putc	include/fcgi_stdio.h	194;"	d
+putc	include/fcgi_stdio.h	195;"	d
+putchar	include/fcgi_stdio.h	196;"	d
+putchar	include/fcgi_stdio.h	197;"	d
+puts	include/fcgi_stdio.h	201;"	d
+puts	include/fcgi_stdio.h	202;"	d
+pv_file	src_cgi/dealfile_cgi.c	/^int pv_file(char *user, char *md5, char *filename)$/;"	f
+pv_file	src_cgi/dealsharefile_cgi.c	/^int pv_file(char *md5, char *filename)$/;"	f
+query_parse_key_value	common/util_cgi.c	/^int query_parse_key_value(const char *query, const char *key, char *value, int *value_len_p)$/;"	f
+rcsid	test/echo.c	/^static const char rcsid[] = "$Id: echo.c,v 1.5 1999\/07\/28 00:29:37 roberts Exp $";$/;"	v	file:
+rdNext	include/fcgiapp.h	/^    unsigned char *rdNext;    \/* reader: first valid byte$/;"	m	struct:FCGX_Stream
+read_cfg	src_cgi/dealfile_cgi.c	/^void read_cfg()$/;"	f
+read_cfg	src_cgi/dealsharefile_cgi.c	/^void read_cfg()$/;"	f
+read_cfg	src_cgi/md5_cgi.c	/^void read_cfg()$/;"	f
+read_cfg	src_cgi/myfiles_cgi.c	/^void read_cfg()$/;"	f
+read_cfg	src_cgi/sharefiles_cgi.c	/^void read_cfg()$/;"	f
+read_cfg	src_cgi/upload_cgi.c	/^void read_cfg()$/;"	f
+recv_save_file	src_cgi/upload_cgi.c	/^int recv_save_file(long len, char *user, char *filename, char *md5, long *p_size)$/;"	f
+redis	Makefile	/^redis=redis$/;"	m
+redis_ip	src_cgi/dealfile_cgi.c	/^static char redis_ip[30] = {0};$/;"	v	file:
+redis_ip	src_cgi/dealsharefile_cgi.c	/^static char redis_ip[30] = {0};$/;"	v	file:
+redis_ip	src_cgi/sharefiles_cgi.c	/^static char redis_ip[30] = {0};$/;"	v	file:
+redis_port	src_cgi/dealfile_cgi.c	/^static char redis_port[10] = {0};$/;"	v	file:
+redis_port	src_cgi/dealsharefile_cgi.c	/^static char redis_port[10] = {0};$/;"	v	file:
+redis_port	src_cgi/sharefiles_cgi.c	/^static char redis_port[10] = {0};$/;"	v	file:
+register	Makefile	/^register=$(CGI_BIN_PATH)\/register$/;"	m
+remove_file_from_storage	src_cgi/dealfile_cgi.c	/^int remove_file_from_storage(char *fileid)$/;"	f
+requestId	include/fcgiapp.h	/^    int requestId;            \/* valid if isBeginProcessed *\/$/;"	m	struct:FCGX_Request
+return_login_status	src_cgi/login_cgi.c	/^void return_login_status(char *status_num, char *token)$/;"	f
+return_login_status	src_cgi/myfiles_cgi.c	/^void return_login_status(long num, int token_flag)$/;"	f
+return_status	common/util_cgi.c	/^char * return_status(char *status_num)$/;"	f
+rewind	include/fcgi_stdio.h	171;"	d
+rewind	include/fcgi_stdio.h	172;"	d
+role	include/fcgiapp.h	/^    int role;$/;"	m	struct:FCGX_Request
+rop_connectdb	common/redis_op.c	/^redisContext* rop_connectdb(char *ip_str, char* port_str, char *pwd)$/;"	f
+rop_connectdb_nopwd	common/redis_op.c	/^redisContext* rop_connectdb_nopwd(char *ip_str, char* port_str)$/;"	f
+rop_connectdb_timeout	common/redis_op.c	/^redisContext* rop_connectdb_timeout(char* ip_str, char *port_str, struct timeval *timeout)$/;"	f
+rop_connectdb_unix	common/redis_op.c	/^redisContext* rop_connectdb_unix(char *sock_path, char *pwd)$/;"	f
+rop_create_or_replace_hash_table	common/redis_op.c	/^int rop_create_or_replace_hash_table(redisContext* conn,$/;"	f
+rop_del_key	common/redis_op.c	/^int rop_del_key(redisContext *conn, char *key)$/;"	f
+rop_disconnect	common/redis_op.c	/^void rop_disconnect(redisContext* conn)$/;"	f
+rop_flush_database	common/redis_op.c	/^int rop_flush_database(redisContext *conn)$/;"	f
+rop_get_list_cnt	common/redis_op.c	/^int rop_get_list_cnt(redisContext *conn, char *key)$/;"	f
+rop_get_string	common/redis_op.c	/^int rop_get_string(redisContext *conn, char *key, char *value)$/;"	f
+rop_hash_del	common/redis_op.c	/^int rop_hash_del(redisContext *conn, char *key, char *field)$/;"	f
+rop_hash_get	common/redis_op.c	/^int rop_hash_get(redisContext *conn, char *key, char *field, char *value)$/;"	f
+rop_hash_set	common/redis_op.c	/^int rop_hash_set(redisContext *conn, char *key, char *field, char *value)$/;"	f
+rop_hash_set_append	common/redis_op.c	/^int rop_hash_set_append(redisContext *conn, char *key, RFIELDS fields, RVALUES values, int val_num)$/;"	f
+rop_hincrement_one_field	common/redis_op.c	/^int rop_hincrement_one_field(redisContext *conn, char *key, char *field, unsigned int num)$/;"	f
+rop_is_key_exist	common/redis_op.c	/^int rop_is_key_exist(redisContext *conn, char* key)$/;"	f
+rop_list_push	common/redis_op.c	/^int rop_list_push(redisContext *conn, char *key, char *value)$/;"	f
+rop_list_push_append	common/redis_op.c	/^int rop_list_push_append(redisContext *conn, char *key, RVALUES values, int val_num)$/;"	f
+rop_range_list	common/redis_op.c	/^int rop_range_list(redisContext *conn, char *key, int from_pos, int end_pos, RVALUES values, int *get_num)$/;"	f
+rop_redis_append	common/redis_op.c	/^int rop_redis_append(redisContext *conn, RCOMMANDS cmds, int cmd_num)$/;"	f
+rop_redis_command	common/redis_op.c	/^int rop_redis_command(redisContext *conn, char *cmd)$/;"	f
+rop_selectdatabase	common/redis_op.c	/^int rop_selectdatabase(redisContext *conn, unsigned int db_no)$/;"	f
+rop_set_key_lifecycle	common/redis_op.c	/^int rop_set_key_lifecycle(redisContext *conn, char *key, time_t delete_time)$/;"	f
+rop_set_string	common/redis_op.c	/^int rop_set_string(redisContext *conn, char *key, char *value)$/;"	f
+rop_setex_string	common/redis_op.c	/^int rop_setex_string(redisContext *conn, char *key, unsigned int seconds, char *value)$/;"	f
+rop_show_keys	common/redis_op.c	/^void rop_show_keys(redisContext *conn, char* pattern)$/;"	f
+rop_test_reply_type	common/redis_op.c	/^void rop_test_reply_type(redisReply *reply)$/;"	f
+rop_trim_list	common/redis_op.c	/^int rop_trim_list(redisContext *conn, char *key, int begin, int end)$/;"	f
+rop_zset_add	common/redis_op.c	/^int rop_zset_add(redisContext *conn, char* key, long score, char* member)$/;"	f
+rop_zset_del_all	common/redis_op.c	/^int rop_zset_del_all(redisContext *conn, char* key)$/;"	f
+rop_zset_exit	common/redis_op.c	/^int rop_zset_exit(redisContext *conn, char *key, char *member)$/;"	f
+rop_zset_get_score	common/redis_op.c	/^int rop_zset_get_score(redisContext *conn, char *key, char *member)$/;"	f
+rop_zset_increment	common/redis_op.c	/^int rop_zset_increment(redisContext *conn, char* key, char* member)$/;"	f
+rop_zset_increment_append	common/redis_op.c	/^int rop_zset_increment_append(redisContext *conn, char *key, RVALUES values, int val_num)$/;"	f
+rop_zset_zcard	common/redis_op.c	/^int rop_zset_zcard(redisContext *conn, char *key)$/;"	f
+rop_zset_zrem	common/redis_op.c	/^int rop_zset_zrem(redisContext *conn, char* key, char* member)$/;"	f
+rop_zset_zrevrange	common/redis_op.c	/^int rop_zset_zrevrange(redisContext *conn, char *key, int from_pos, int end_pos, RVALUES values, int *get_num)$/;"	f
+save_file	src_cgi/dealsharefile_cgi.c	/^int save_file(char *user, char *md5, char *filename)$/;"	f
+scrunch	common/des.c	/^void scrunch(register unsigned char *outof, register unsigned long *into)$/;"	f
+set_token	src_cgi/login_cgi.c	/^int set_token(char *user, char *token)$/;"	f
+setbuf	include/fcgi_stdio.h	164;"	d
+setbuf	include/fcgi_stdio.h	165;"	d
+setvbuf	include/fcgi_stdio.h	162;"	d
+setvbuf	include/fcgi_stdio.h	163;"	d
+share_file	src_cgi/dealfile_cgi.c	/^int share_file(char *user, char *md5, char *filename)$/;"	f
+sharefiles	Makefile	/^sharefiles=$(CGI_BIN_PATH)\/sharefiles$/;"	m
+skip	common/cJSON.c	/^static const char *skip(const char *in) {while (in && *in && (unsigned char)*in<=32) in++; return in;}$/;"	f	file:
+state	include/md5.h	/^    unsigned int state[4];$/;"	m	struct:__anon1
+stderr	include/fcgi_stdio.h	147;"	d
+stderr	include/fcgi_stdio.h	148;"	d
+stdin	include/fcgi_stdio.h	143;"	d
+stdin	include/fcgi_stdio.h	144;"	d
+stdio_stream	include/fcgi_stdio.h	/^    FILE *stdio_stream;$/;"	m	struct:__anon2
+stdout	include/fcgi_stdio.h	145;"	d
+stdout	include/fcgi_stdio.h	146;"	d
+stop	include/fcgiapp.h	/^    unsigned char *stop;      \/* reader: last valid byte + 1$/;"	m	struct:FCGX_Stream
+stopUnget	include/fcgiapp.h	/^    unsigned char *stopUnget; \/* reader: first byte of current buffer$/;"	m	struct:FCGX_Stream
+storage_start	fastdfs.sh	/^storage_start()$/;"	f
+store_fileinfo_to_mysql	src_cgi/upload_cgi.c	/^int store_fileinfo_to_mysql(char *user, char *filename, char *md5, long size, char *fileid, char *fdfs_file_url)$/;"	f
+str_replace	common/util_cgi.c	/^void str_replace(char* strSrc, char* strFind, char* strReplace)$/;"	f
+string	include/cJSON.h	/^	char *string;				\/* The item's name string, if this item is the child of, or is in the list of subitems of an object. *\/$/;"	m	struct:cJSON
+suffix_object	common/cJSON.c	/^static void suffix_object(cJSON *prev,cJSON *item) {prev->next=item;item->prev=prev;}$/;"	f	file:
+target	Makefile	/^target=$(login)		\\$/;"	m
+tmpfile	include/fcgi_stdio.h	226;"	d
+tmpfile	include/fcgi_stdio.h	227;"	d
+totrot	common/des.c	/^static unsigned char totrot[16] = {1,2,4,6,8,10,12,14,15,17,19,21,23,25,27,28};$/;"	v	file:
+tracker_start	fastdfs.sh	/^tracker_start()$/;"	f
+trim_space	common/util_cgi.c	/^int trim_space(char *inbuf)$/;"	f
+type	include/cJSON.h	/^	int type;					\/* The type of the item, as above. *\/$/;"	m	struct:cJSON
+ungetc	include/fcgi_stdio.h	184;"	d
+ungetc	include/fcgi_stdio.h	185;"	d
+unscrun	common/des.c	/^void unscrun(register unsigned long *outof, register unsigned char *into)$/;"	f
+update	common/cJSON.c	/^static int update(printbuffer *p)$/;"	f	file:
+upload	Makefile	/^upload=$(CGI_BIN_PATH)\/upload$/;"	m
+upload_to_dstorage	src_cgi/upload_cgi.c	/^int upload_to_dstorage(char *filename, char *fileid)$/;"	f
+usage	test/fdfs_upload_file.c	/^static void usage(char *argv[])$/;"	f	file:
+user_register	src_cgi/reg_cgi.c	/^int user_register( char *reg_buf )$/;"	f
+valuedouble	include/cJSON.h	/^	double valuedouble;			\/* The item's number, if type==cJSON_Number *\/$/;"	m	struct:cJSON
+valueint	include/cJSON.h	/^	int valueint;				\/* The item's number, if type==cJSON_Number *\/$/;"	m	struct:cJSON
+valuestring	include/cJSON.h	/^	char *valuestring;			\/* The item's string, if type==cJSON_String *\/$/;"	m	struct:cJSON
+verify_token	common/util_cgi.c	/^int verify_token(char *user, char *token)$/;"	f
+vfprintf	include/fcgi_stdio.h	209;"	d
+vfprintf	include/fcgi_stdio.h	210;"	d
+vprintf	include/fcgi_stdio.h	211;"	d
+vprintf	include/fcgi_stdio.h	212;"	d
+wasFCloseCalled	include/fcgiapp.h	/^    int wasFCloseCalled;$/;"	m	struct:FCGX_Stream
+wrNext	include/fcgiapp.h	/^    unsigned char *wrNext;    \/* writer: first free byte$/;"	m	struct:FCGX_Stream
