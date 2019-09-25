@@ -1,8 +1,6 @@
 /**
  * @file md5_cgi.c
  * @brief  秒传功能的cgi
- * @author honor
- * @date 2019/09/10
  */
 
 #include "fcgi_config.h"

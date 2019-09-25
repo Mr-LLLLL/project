@@ -1,8 +1,6 @@
 /**
  * @file reg_cgi.c
  * @brief  注册事件后CGI程序
- * @author honor
- * @date 2019/9/10
  */
 
 #include "fcgi_config.h"

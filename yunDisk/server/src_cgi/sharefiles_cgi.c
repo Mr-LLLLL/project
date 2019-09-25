@@ -1,8 +1,6 @@
 /**
  * @file sharefiles_cgi.c
  * @brief  共享文件列表展示CGI程序
- * @author honor
- * @date 2019/09/11
  */
 
 #include <mysql/mysql.h>

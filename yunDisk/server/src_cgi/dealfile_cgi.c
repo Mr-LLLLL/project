@@ -1,8 +1,6 @@
 /**
  * @file dealfile_cgi.c
  * @brief  分享、删除文件、文件pv字段处理CGI程序
- * @author honor
- * @date 2019/09/11
  */
 
 #include "fcgi_config.h"

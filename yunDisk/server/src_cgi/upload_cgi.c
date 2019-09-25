@@ -1,8 +1,6 @@
 /**
  * @file upload_cgi.c
  * @brief   上传文件后台CGI程序
- * @author  honor
- * @date 2019/09/10
  */
 
 #include <stdio.h>

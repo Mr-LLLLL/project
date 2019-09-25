@@ -1,8 +1,6 @@
 /**
  * @file myfiles_cgi.c
  * @brief  用户列表展示CGI程序
- * @author honor
- * @date 2019/09/10
  */
 
 #include "fcgi_config.h"
