@@ -1,0 +1,15 @@
+{
+    "app_id": "wxe0f9c8825b0df173",
+    "app_secret": "ff9b92abf43d78d222281b9b4839d221",
+    "template_id": "eo-kXAhE8VqNkV7nhFoHAX_f8A4Ao9ZgCAPBWiFlYgE",
+    "user": [
+        "opJ1j6AOjmbw92k4kKoklCU__JOE",
+    ],
+    "province": "贵州",
+    "city": "贵阳",
+    "birthday": "2002-07-19",
+    "birth_txt_wait": "距离傻倩的生日还有",
+    "birth_txt_today": "今天傻倩生日了",
+    "day_txt": "天",
+    "love_date": "2022-05-03"
+}
