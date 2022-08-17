@@ -7,7 +7,6 @@ import cityinfo
 from requests import get, post
 from datetime import datetime, date
 import sys
-import os
 
 
 def get_color():
@@ -19,9 +18,9 @@ def get_color():
 
 def get_access_token():
     # appId
-    app_id = config["app_id"]
+    app_id = "wxe0f9c8825b0df173"
     # appSecret
-    app_secret = config["app_secret"]
+    app_secret = "ff9b92abf43d78d222281b9b4839d221"
     post_url = ("https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={}&secret={}"
                 .format(app_id, app_secret))
     try:
@@ -64,10 +63,26 @@ def get_weather(province, city):
     return weather, temp, tempn
 
 
-def get_birthday(birthday_month, birthday_day, year, today):
-    year_date = date(year, birthday_month, birthday_day)
+def get_birthday(birthday):
+    birthday = "2002-07-19"
+    today_year = localtime().tm_year
+    today_month = localtime().tm_mon
+    today_day = localtime().tm_mday
+    birthYear = today_year
+    solarBirthDay = sxtwl.fromLunar(birthYear, int(birthday.split("-")[1]), int(birthday.split("-")[2]))
+    solar_mongth = solarBirthDay.getSolarMonth()
+    solar_day = solarBirthDay.getSolarDay()
+
+    if solar_mongth <= today_month and solar_day < today_day:
+        birthYear +=1
+        solarBirthDay = sxtwl.fromLunar(birthYear, int(birthday.split("-")[1]), int(birthday.split("-")[2]))
+        solar_mongth = solarBirthDay.getSolarMonth()
+        solar_day = solarBirthDay.getSolarDay()
+
+    today = datetime.date(datetime(year=today_year, month=today_month, day=today_day))
+    year_date = date(birthYear, solar_mongth, solar_day)
     if today > year_date:
-        birth_date = date((year + 1), birthday_month, birthday_day)
+        birth_date = date((today_year + 1), solar_mongth, solar_day)
         birth_day = str(birth_date.__sub__(today)).split(" ")[0]
     elif today == year_date:
         birth_day = 0
@@ -98,24 +113,23 @@ def send_message(to_user, access_token, city_name, weather, max_temperature, min
     day = localtime().tm_mday
     today = datetime.date(datetime(year=year, month=month, day=day))
     week = week_list[today.isoweekday() % 7]
-    love_year = int(config["love_date"].split("-")[0])
-    love_month = int(config["love_date"].split("-")[1])
-    love_day = int(config["love_date"].split("-")[2])
+    loveday_txt = "2022-05-03"
+    love_year = int(loveday_txt.split("-")[0])
+    love_month = int(loveday_txt.split("-")[1])
+    love_day = int(loveday_txt.split("-")[2])
     love_date = date(love_year, love_month, love_day)
     love_days = str(today.__sub__(love_date)).split(" ")[0]
 
-    birthTxt = config["birth_txt_wait"]
-    birthday = config["birthday"]
-    solarDay = sxtwl.fromLunar(year, int(birthday.split("-")[1]), int(birthday.split("-")[2]))
-    reminderBitDay =  get_birthday(solarDay.getSolarMonth(), solarDay.getSolarDay(), year, today)
-    dayTxt = config["day_txt"]
+    birthTxt = "距离傻倩的生日还有"
+    reminderBitDay =  get_birthday("2002-07-19")
+    dayTxt = "天"
     if reminderBitDay == 0:
-        birthTxt = config["birth_txt_today"]
+        birthTxt =  "今天傻倩生日了"
         reminderBitDay = ""
         dayTxt = ""
     data = {
         "touser": to_user,
-        "template_id": config["template_id"],
+        "template_id": "jzzx9Ucy-hNNhslp8AdFRrSgXu_SIP4-8itoLLxRw2I",
         "url": "http://weixin.qq.com/download",
         "topcolor": "#FF0000",
         "data": {
@@ -182,22 +196,12 @@ def send_message(to_user, access_token, city_name, weather, max_temperature, min
 
 
 if __name__ == "__main__":
-    try:
-        with open("config.json", encoding="utf-8") as f:
-            config = eval(f.read())
-    except FileNotFoundError:
-        print("推送消息失败，请检查config.json文件是否与程序位于同一路径")
-        sys.exit(1)
-    except SyntaxError:
-        print("推送消息失败，请检查配置文件格式是否正确")
-        sys.exit(1)
-
     # 获取accessToken
     accessToken = get_access_token()
     # 接收的用户
-    users = config["user"]
+    users = ["opJ1j6AOjmbw92k4kKoklCU__JOE", "opJ1j6CRc2_4Gyi5UV7XiEDsv78M"]
     # 传入省份和市获取天气信息
-    province, city = config["province"], config["city"]
+    province, city = "贵州", "贵阳"
     weather, max_temperature, min_temperature = get_weather(province, city)
     # 获取词霸每日金句
     note_ch, note_en = get_ciba()
